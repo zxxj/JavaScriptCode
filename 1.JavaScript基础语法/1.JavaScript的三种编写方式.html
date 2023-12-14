@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<!-- 1.HTML行内 -->
+	<a href="javascript:alert('dusk')">点击弹出dusk</a>
+
+	<!-- 2.script元素中 -->
+	<div class="dusk">dusk真帅~</div>
+
+	<script>
+		const duskEl = document.querySelector(".dusk")
+		duskEl.onclick = () => {
+			alert("dusk真帅~")
+		}
+	</script>
+
+	<!-- 3.外部js文件 -->
+	<div class="duskzzz">努力的dusk~</div>
+	<script src="../js/duskDemo.js"></script>
+
+</body>
+
+</html>

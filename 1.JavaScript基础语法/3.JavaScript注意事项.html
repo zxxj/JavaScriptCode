@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- 1.不能写为单标签元素 -->
+	<!-- <script src="../js/duskDemo.js" /> -->
+
+	// 2.可以省略type
+	<!-- <script type="javascript/text"></script> -->
+	<!-- <script></script> -->
+
+	<!--  3.加载顺序 -->
+	<script>
+		const duskEl = document.querySelector(".test")
+		console.log(duskEl) // null
+	</script>
+	<div class="test">dusk</div>
+</body>
+
+</html>
