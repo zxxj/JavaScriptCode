@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<script>
+
+		// 1.定义一些变量, 保存自己的个人信息
+		var name = "dusk"
+		var age = 18
+		var height = 1.88
+		var address = "北京"
+
+		age = 22
+
+		console.log(name, age, height, address) // dusk 22 1.88 北京
+
+		// 2.定义一个变量name, 赋值为dusk, 定义一个变量admin, 将name赋值给admin
+		var nickname = "xin"
+		var admin = nickname
+		console.log(admin) // xin
+
+		// 3.定义变量保存两个数字, 并且对两个变量中的数字进行交换
+		var num1 = 10
+		var num2 = 20
+
+		// 借助于第三个变量
+		var num3 = num1
+		num1 = num2
+		num2 = num3
+		console.log(num1, num2) // 20 10
+
+		// 不借助第三个变量
+		var n1 = 10
+		var n2 = 20
+
+		n1 = n1 + n2
+		n2 = n1 - n2
+		n1 = n1 - n2
+		console.log(n1, n2) // 20 10
+
+		// 4.让用户在浏览器输入一个值, 在js中用变量接收
+		var result = prompt("请输入:")
+		console.log(result)
+
+	</script>
+
+</body>
+
+</html>
